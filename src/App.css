@@ -1,0 +1,120 @@
+/* Общий контейнер */
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: 'Helvetica', sans-serif;
+  background: #E8EAEE;
+}
+
+/* ——— HEADER ——— */
+.chat-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: #FFFFFF;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin: 0 8px;
+}
+
+.icon:hover{
+  cursor: pointer;
+}
+
+.back {
+  cursor: pointer;
+}
+
+.avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.avatar:hover{
+  cursor: pointer;
+}
+
+.header-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+}
+
+.status {
+  font-size: 12px;
+  color: #4CAF50; /* зеленый для online */
+}
+
+/* ——— BODY ——— */
+.chat-body {
+  flex: 1;
+  padding: 10px 12px;
+  overflow-y: auto;
+}
+
+/* ——— FOOTER ——— */
+/* ОБОЛОЧКА для поля ввода (эффект островка) */
+.chat-footer {
+  display: flex;
+  justify-content: center;
+  padding: 6px;
+  background: transparent; /* прозрачный фон у контейнера */
+}
+
+/* фон-островок */
+.footer-inner {
+  display: flex;
+  width: 95%;
+  max-width: 600px;  /* ограничивает ширину, как в телефоне */
+  background: #fff;
+  border-radius: 25px;
+  padding: 8px 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  align-items: center;
+}
+
+/* основное поле ввода */
+.input-message {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 20px;
+  background: #F2F3F5;
+  outline: none;
+  margin-right: 8px;
+}
+
+/* кнопка отправки */
+.send-button {
+  background: #0088CC;
+  border: none;
+  color: white;
+  padding: 10px 14px;
+  font-size: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.send-button:hover {
+  background: #007ab8;
+}
+
